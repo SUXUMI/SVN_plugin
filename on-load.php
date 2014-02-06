@@ -4,8 +4,8 @@ Langs:		Anything - PHP, JS etc
 Example:
 //-->
 <script>
-top.document.getElementById("folderMenuItems").innerHTML += '<a href="javascript:top.ICEcoder.checkout(top.ICEcoder.rightClickedFile)" onMouseOver="ICEcoder.showFileMenu()">SVN Checkout</a><a href="javascript:top.ICEcoder.commit(top.ICEcoder.rightClickedFile)" onMouseOver="ICEcoder.showFileMenu()">SVN Commit</a><div onMouseOver="ICEcoder.showFileMenu()" style="padding: 2px 0"><hr></div>';
-	
+top.document.getElementById("fileMenu").innerHTML += '<div onMouseOver="ICEcoder.showFileMenu()" style="padding: 2px 0"><hr></div><a href="javascript:top.ICEcoder.checkout(top.ICEcoder.rightClickedFile)" onMouseOver="ICEcoder.showFileMenu()">SVN Checkout</a><a href="javascript:top.ICEcoder.commit(top.ICEcoder.rightClickedFile)" onMouseOver="ICEcoder.showFileMenu()">SVN Commit</a>';
+
 // Pass target file/folder to SVN Checkout
 top.ICEcoder.checkout = function(tgt) {
 		tgt=tgt.replace(/\//g,"|");
