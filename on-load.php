@@ -9,8 +9,7 @@ top.document.getElementById("fileMenu").innerHTML += '<div onMouseOver="ICEcoder
 // Pass target file/folder to SVN Checkout
 top.ICEcoder.svnCheckout = function(tgt) {
 	tgt=tgt.replace(/\//g,"|");
-   	var comments = prompt("Enter SVN comment: ", "");
-	top.ICEcoder.filesFrame.contentWindow.frames['fileControl'].location.href="plugins/svn/checkout.php?f="+tgt+"&c="+comments;
+	top.ICEcoder.filesFrame.contentWindow.frames['fileControl'].location.href="plugins/svn/checkout.php?f="+tgt;
 }
 
 // Pass target file/folder to SVN Commit
